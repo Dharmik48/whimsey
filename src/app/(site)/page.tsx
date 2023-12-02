@@ -2,6 +2,7 @@ import TitleSection from '@/components/landing-page/TitleSection'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Banner from 'public/appBanner.png'
+import Cal from 'public/cal.png'
 import { CLIENTS } from '@/lib/cosntansts'
 
 const HomePage = () => {
@@ -46,6 +47,19 @@ Productivity Platform'
 						))}
 					</div>
 				))}
+			</section>
+			<section className='overflow-x-hidden px-4 sm:px-6 mt-24 sm:flex sm:flex-col gap-4 md:justify-center md:items-center'>
+				<TitleSection
+					title='Keep track of your meetings 
+all in one place'
+					subheading='Capture your ideas, thoughts, and meeting notes in a 
+structured and organized manner.'
+					pill='Features'
+				/>
+				<div className='rounded-xl border-4 border-washed-purple-300 border-opacity-10 w-[425px] sm:w-[512px] ml-5 md:mx-auto sm:ml-0 mt-10 md:flex justify-center items-center relative'>
+					<Image src={Cal} alt='Calender' className='opacity-80 rounded-xl' />
+					<div className='top-10 w-full blur-[256px] opacity-80 bg-brand-primaryPurple rounded-full h-1/2 absolute -z-[1]'></div>
+				</div>
 			</section>
 		</>
 	)
