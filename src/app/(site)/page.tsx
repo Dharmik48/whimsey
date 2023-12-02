@@ -2,11 +2,12 @@ import TitleSection from '@/components/landing-page/TitleSection'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Banner from 'public/appBanner.png'
+import { CLIENTS } from '@/lib/cosntansts'
 
 const HomePage = () => {
 	return (
-		<section>
-			<div className='overflow-x-hidden px-4 sm:px-6 mt-10 sm:flex sm:flex-col gap-4 md:justify-center md:items-center'>
+		<>
+			<section className='overflow-x-hidden px-4 sm:px-6 mt-10 sm:flex sm:flex-col gap-4 md:justify-center md:items-center'>
 				<TitleSection
 					title='All-In-One Collaboration and
 Productivity Platform'
@@ -24,8 +25,29 @@ Productivity Platform'
 					<Image src={Banner} alt='Banner' />
 					<div className='absolute w-full top-1/2 bottom-0 bg-gradient-to-b dark:from-transparent dark:to-background'></div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<section className='flex overflow-hidden mt-10 gap-10 md:gap-16'>
+				{[...Array(3)].map(arr => (
+					<div
+						key={arr}
+						className='gap-10 md:gap-16 animate-slide flex flex-nowrap'
+					>
+						{CLIENTS.map(client => (
+							<div
+								key={client.alt}
+								className='relative w-[200px] shrink-0 flex items-center'
+							>
+								<Image
+									src={client.logo}
+									alt={client.alt}
+									className='object-contain max-w-none'
+								/>
+							</div>
+						))}
+					</div>
+				))}
+			</section>
+		</>
 	)
 }
 
