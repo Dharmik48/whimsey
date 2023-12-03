@@ -21,7 +21,7 @@ const TitleSection: React.FC<TitleSectionProps> = ({
 					<h2 className='text-left md:text-center text-3xl sm:text-5xl max-w-[750px] font-semibold'>
 						{title}
 					</h2>
-					<article className='dark:text-washed-purple-700 sm:max-w-[450px] md:text-center'>
+					<article className='mt-4 dark:text-washed-purple-700 sm:max-w-[450px] md:text-center'>
 						{subheading}
 					</article>
 				</>
