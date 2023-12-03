@@ -21,7 +21,7 @@ Productivity Platform'
 				/>
 				<div className='p-[2px] mt-6 sm:w-[300px] rounded-lg dark:bg-gradient-to-l dark:from-brand-primaryBlue dark:to-brand-primaryPurple'>
 					<Button
-						variant={'secondary'}
+						variant={'btn-secondary'}
 						className='w-full text-lg bg-background rounded-lg p-1 dark:text-washed-purple-500'
 					>
 						Get whimsey Free
@@ -173,7 +173,10 @@ personal and professional productivity needs.'
 									<p className='dark:text-washed-purple-800'>
 										{card.description}
 									</p>
-									<Button className='whitespace-nowrap w-full mt-4'>
+									<Button
+										variant={'btn-primary'}
+										className='whitespace-nowrap w-full mt-4'
+									>
 										{card.planType === PRICING_PLANS.proplan
 											? 'Go Pro'
 											: 'Get Started'}
