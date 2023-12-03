@@ -26,16 +26,3 @@ const CustomCard: React.FC<CustomCardProps> = ({
 }
 
 export default CustomCard
-
-{
-	/* <div className='w-[430px] rounded-xl border border-Neutrals/neutrals-11'>
-			<div className='flex gap-4 items-center'>
-				<Image src={Avatar} alt={name} className='rounded-full' />
-				<div>
-					<p className='text-washed-purple-600'>{name}</p>
-					<p className='text-washed-purple-700'>@{name}</p>
-				</div>
-			</div>
-			<p className='text-washed-purple-800'>{message}</p>
-		</div> */
-}
